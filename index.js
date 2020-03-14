@@ -2,13 +2,12 @@
 const dropdown = document.querySelector('.dropdown')
 const menu = document.querySelector('#menu')
 const logo = document.querySelector('.logo')
+const hero = document.querySelector('#hero')
 const home = document.querySelector('.home')
 const about = document.querySelector('.about')
 const projects = document.querySelector('.projects')
 const contact = document.querySelector('.contact')
 const headshot = document.querySelector('#headshot')
-
-
 
 //nav buttons
 const homeBtns = document.querySelectorAll('.home-btn')
@@ -76,7 +75,13 @@ function init() {
 
   renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
 
-  window.innerWidth < 800 ? renderer.setSize(window.innerWidth * 1.2, window.innerHeight * 1.2) : renderer.setSize( window.innerWidth, window.innerHeight );
+  //MOBILE render
+  if (window.innerWidth < 800) {
+    renderer.setSize(window.innerWidth * .8, window.innerHeight * .8)
+    // renderer.domElement.style = 'padding-bottom: 10rem'
+  } else {
+    renderer.setSize( window.innerWidth, window.innerHeight
+      )};
 
   home.appendChild(renderer.domElement)
 
@@ -93,6 +98,7 @@ function init() {
   wireCube = new THREE.Mesh(wireGeo, wireMat)
 
   scene.add( wireCube )
+
 
   camera.position.z = 3.4;
 
@@ -214,6 +220,13 @@ function getPosition(element) {
 
 dropdown.addEventListener('click', dropMenu)
 
+//Add Fatface Font to Hero on load
+// window.addEventListener('DOMContentLoaded', () => {
+//   // hero.style.fontFamily = "Abril Fatface, cursive"
+//   // hero.style.background = "red"
+//   hero.classList.add('hero')
+//   console.log(hero, hero.style, hero.classList)
+// })
 //resize canvas on window resize
 window.addEventListener( 'resize', onWindowResize, false );
 
@@ -225,6 +238,15 @@ function onWindowResize(){
     renderer.setSize( window.innerWidth, window.innerHeight );
 
 }
+
+//mobile version - switch if less than a certain size
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('Mobile!')
+  if(window.innerWidth < 900) {
+    // window.location.href = "./mobile.html"
+
+  }
+})
 
 
 logo.addEventListener('click', spinLogo)
