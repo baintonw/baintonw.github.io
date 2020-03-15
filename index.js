@@ -220,13 +220,7 @@ function getPosition(element) {
 
 dropdown.addEventListener('click', dropMenu)
 
-//Add Fatface Font to Hero on load
-// window.addEventListener('DOMContentLoaded', () => {
-//   // hero.style.fontFamily = "Abril Fatface, cursive"
-//   // hero.style.background = "red"
-//   hero.classList.add('hero')
-//   console.log(hero, hero.style, hero.classList)
-// })
+
 //resize canvas on window resize
 window.addEventListener( 'resize', onWindowResize, false );
 
