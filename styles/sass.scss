@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  // z-index: 5;
+  // z-index: 5;asdfsdf;
 }
 
 .canvas {
@@ -229,7 +229,7 @@ header {
 }
 //HOME SECTION
 .home {
-  @include flexCenter(#ffffff)
+  @include flexCenter(#ffffff);
   background-color: rgba(237, 238, 241, .7);
   position: relative;
   background-repeat: no-repeat;
@@ -241,7 +241,7 @@ header {
 }
 //ABOUT SECTION
 .about {
-  @include flexCenter(white)
+  @include flexCenter(white);
   position: relative;
   height: 220vh;
   flex-wrap: wrap;
@@ -494,7 +494,7 @@ header {
 
 .projects {
   position: relative;
-  @include flexCenter(white)
+  @include flexCenter(white);
   height: 160vh;
   flex-direction: column;
   box-shadow: 0 1px 3px rgba(1,0,0,0.54), 0 1px 2px rgba(0,0,0,0.54), 0 -3px 5px rgba(0, 0, 0, .5);
@@ -762,9 +762,8 @@ header {
 }
 //contact section
 .contact {
-  @include flexCenter(white)
+  @include flexCenter(white);
   position: relative;
-
   flex-wrap: wrap;
   height: 100vh;
 }
