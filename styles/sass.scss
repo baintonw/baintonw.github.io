@@ -995,7 +995,7 @@ footer {
 
    #hero {
      position: absolute;
-     top: -19%;
+     top: -7%;
      font-size: 61.5vw;
      z-index: -1;
      font-weight: 1000;
@@ -1034,11 +1034,12 @@ footer {
 
   .underscore {
     position: relative;
-    top: 24%;
-    left: 0%;
+    /* margin-top: 37em; */
+    top: 25%;
     width: 30%;
     height: 0;
     border-bottom: 3px solid black;
+    
 
     &.slideIn {
       left: 0%;
@@ -1051,7 +1052,7 @@ footer {
 
   #skill-intro {
     position: relative;
-    top: 6%;
+    top: 2%;
     left: 10%;
     font-size: 1.2em;
     padding-left: 2em;
@@ -1121,16 +1122,16 @@ footer {
 
   #skills-container {
     position: relative;
-    bottom: 13%;
-    flex-direction: column;
-    /* right: 0%; */
+    bottom: 21%;
+    flex-direction: row;
     left: 15%;
-    min-height: 0;
+    // min-height: 0;
+    /* flex-basis: 100%; */
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100vw;
-    height: 15%;
+    height: 11%;
     min-height: 10vh;
 }
 
@@ -1155,7 +1156,7 @@ footer {
   .text-box-tl {
     width: 86%;
     align-self: flex-start;
-    padding-bottom: 80%;
+    padding-bottom: 35%;
 
       & h2 {
         color: rgba(0,0,0 ,1);
@@ -1244,6 +1245,6 @@ footer {
 
 
   canvas {
-    padding-top: 15em
+    padding-top: 0em;
   }
 }
