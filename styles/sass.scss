@@ -999,7 +999,7 @@ footer {
 
    #hero {
      position: absolute;
-     top: -7%;
+     top: 7%;
      font-size: 61.5vw;
      z-index: -1;
      font-weight: 1000;
@@ -1011,7 +1011,8 @@ footer {
 
    //about section
    .about {
-     height: 260vh
+     height: 260vh;
+    
    }
    #about-title {
      top: 0%;
@@ -1098,7 +1099,7 @@ footer {
 
     flex-basis: 50%;
     max-width: 33%;
-    
+
     & .skill-titleBtm {
       font-size: 1em;
       padding-left: 3em;
@@ -1154,7 +1155,7 @@ footer {
   //projects section
 
   .projects {
-    height: 250vh;
+    height: 200vh;
   }
   #projects-title {
     font-size: 60px;
@@ -1168,7 +1169,7 @@ footer {
   .text-box-tl {
     width: 86%;
     align-self: flex-start;
-    padding-bottom: 26em;
+    padding-bottom: 32em;
 
       & h2 {
         color: rgba(0,0,0 ,1);
@@ -1237,6 +1238,11 @@ footer {
   #contact-form.popUp {
     width: 70%;
     opacity: 1;
+}
+
+#contact-form input#submit-btn {
+  width: 30%;
+  float: right;
 }
 
 

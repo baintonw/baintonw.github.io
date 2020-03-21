@@ -235,9 +235,12 @@ function onWindowResize(){
 
 //mobile version - switch if less than a certain size
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('Mobile!')
+  console.log('GOING Mobile!')
   if(window.innerWidth < 900) {
     // window.location.href = "./mobile.html"
+    canvas.style.width = `${window.innerWidth / 1.5}px`
+    canvas.style.height = `${window.innerHeight / 1.5}px`
+
 
   }
 })
