@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+.body-wrapper {
+  min-width: 2000px;
+}
+
 .canvas {
   width: 1vw;
   height: 1vh;
@@ -988,6 +992,10 @@ footer {
     font-size: 1rem;
     padding-left: 2.5rem;
   }
+  .skill {
+    flex-basis: 50%;
+    max-width: 33%;
+  }
   .skill#skill1 {
     border: 1px solid black;
   }
@@ -999,6 +1007,10 @@ footer {
   }
   .skill#skill3 {
     border: 1px solid black;
+  }
+  .skillBtm {
+    flex-basis: 50%;
+    max-width: 33%;
   }
   .skillBtm .skill-titleBtm {
     font-size: 1em;

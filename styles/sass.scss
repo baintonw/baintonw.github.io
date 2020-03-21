@@ -10,6 +10,10 @@ body {
   // z-index: 5;asdfsdf;
 }
 
+.body-wrapper {
+  min-width: 2000px;
+}
+
 .canvas {
   width: 1vw;
   height: 1vh;
@@ -1070,6 +1074,9 @@ footer {
 
   .skill {
 
+    flex-basis: 50%;
+    max-width: 33%;
+
 
     &#skill1 {
       border: 1px solid black;
@@ -1088,6 +1095,10 @@ footer {
   }
 
   .skillBtm {
+
+    flex-basis: 50%;
+    max-width: 33%;
+    
     & .skill-titleBtm {
       font-size: 1em;
       padding-left: 3em;
@@ -1122,7 +1133,7 @@ footer {
 
   #skills-container {
     position: relative;
-    bottom: 14%;
+    bottom: 14%; 
 
     flex-direction: row;
     left: 15%;
