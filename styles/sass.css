@@ -230,7 +230,7 @@ header.sticky {
   width: 100vw;
   background: white;
   position: relative;
-  height: 220vh;
+  height: 110rem;
   flex-wrap: wrap;
   align-content: space-between;
 }
@@ -297,23 +297,29 @@ header.sticky {
   border-bottom: 3px solid black;
   transition: 1.2s;
   transition-delay: .2s;
-  bottom: 33%;
+  margin-top: 10rem;
+  opacity: 0;
+  /* bottom: 33%; */
 }
 
 .underscore.slideIn {
-  left: 28%;
+  left: 0%;
+  opacity: 1;
 }
 
 #skills-container {
-  position: relative;
-  right: 15%;
-  margin-bottom: 15%;
+  /* position: relative; */
+  /* left: 1.7rem; */
+  /* right: 13.5rem; */
+  margin-right: 13rem;
+  margin-left: 13rem;
+  margin-bottom: 13rem;
   min-height: 0;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  width: 60vw;
-  height: 60vh;
+  width: 50rem;
+  height: 30rem;
   min-height: 10vh;
 }
 
