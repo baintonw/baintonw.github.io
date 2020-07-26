@@ -279,9 +279,9 @@ window.addEventListener('scroll', function() {
   if((window.scrollY + window.innerHeight) >= aboutTitle.offsetTop) {
     aboutTitle.classList.add('fadeIn')
   }
-  // if((window.scrollY + window.innerHeight) >= (underscore.offsetTop + 1000)) {
-  //   underscore.classList.add('slideIn')
-  // }
+  if((window.scrollY + window.innerHeight) >= (underscore.offsetTop + 1000)) {
+    underscore.classList.add('slideIn')
+  }
   if((window.scrollY + window.innerHeight) >= getPosition(skillsContainer).y) {
     skill1.classList.add('slideDown')
     skill2.classList.add('slideDown')
