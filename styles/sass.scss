@@ -233,6 +233,7 @@ header {
     opacity: 1;
   }
 }
+
 //HOME SECTION
 .home {
   @include flexCenter(#ffffff);
@@ -245,40 +246,29 @@ header {
 
   z-index: 1;
 }
+
 //ABOUT SECTION
 .about {
-  @include flexCenter(white);
-  position: relative;
-  height: 220vh;
-  flex-wrap: wrap;
-  align-content: space-between;
+  // @include flexCenter(white);
+  // position: relative;
+  // height: 220vh;
+  // flex-wrap: wrap;
+  // align-content: space-between;
 }
-
-#headshot-wrapper {
-  position: relative;
-  bottom: 11%;
-  width: 30%;
-  height: 45%;
-  background: bisque;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 #about-text {
-  right: 20%;
-  width: 50vw;
-  height: 40vh;
-  max-height: 20vh;
+  // right: 20%;
+  // width: 50vw;
+  // height: 40vh;
+  // max-height: 20vh;
   opacity: 0;
-  padding-top: 10vh;
+  // padding-top: 10vh;
   padding-left: 20vw;
   padding-right: 20vw;
-  margin-top: 13rem;
+  // margin-top: 13rem;
   font-size: 1.6rem;
   line-height: 2.3;
-  flex-basis: 100%;
+  // flex-basis: 100%;
 
   &.fadeIn {
     opacity: 1;
@@ -289,7 +279,7 @@ header {
 }
 
 #about1 {
-  position: relative;
+  // position: relative;
   left : -20%;
   opacity: 0;
   transition: opacity 2.6s ease-in-out 1s, left 2s ease-in-out 1s;
@@ -301,51 +291,32 @@ header {
 }
 
 #about2 {
-  position: relative;
-  right: -20%;
+ 
   opacity: 0;
   transition: opacity 2.6s ease-in-out 1.5s, right 2s ease-in-out 1s;
 
   &.fadeIn {
-    right: 0%;
     opacity: 1;
   }
 }
 
-.underscore {
+// .underscore {
 
-  position: relative;
-  left: -20%;
-  width: 30%;
-  height: 0;
-  border-bottom: 3px solid black;
-  transition: 1.2s;
-  transition-delay: .2s;
-  bottom: 33%;
-  &.slideIn {
-    left: 28%;
-  }
-}
-
-#skills-container {
-  position: relative;
-  right: 15%;
-  margin-bottom: 15%;
-  min-height: 0;
-
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-
-  width: 60vw;
-  height: 60vh;
-  min-height: 10vh;
-}
+//   position: relative;
+//   // left: -20%;
+//   width: 30%;
+//   height: 0;
+//   border-bottom: 3px solid black;
+//   transition: 1.2s;
+//   transition-delay: .2s;
+//   bottom: 33%;
+//   &.slideIn {
+//     left: 28%;
+//   }
+// }
 
 #skill-intro {
-  position: absolute;
-  left: 50%;
-  bottom: 42%;
+  
   flex-basis: 100%;
   font-weight: normal;
   opacity: 0;
@@ -357,6 +328,15 @@ header {
   }
 }
 
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 60vw;
+  min-height: 10vh;
+
+  border: 2px solid salmon;
+}
 
 
 
@@ -445,16 +425,11 @@ header {
   &#skill4 {
     border-bottom: 0;
     border-left: 0;
-    // background: #f9ff87;
   }
 
   &#skill5 {
     border-bottom: 0;
-    // transition-delay: .2s
     transition: top .8s 1.2s, transform .6s, opacity .8s 1.2s;
-
-
-    // background: #fab1d1;
   }
   &#skill6 {
     border-bottom: 0;
@@ -1003,20 +978,17 @@ footer {
 
 
    //about section
-   .about {
-     height: 260vh;
-    
-   }
-   #about-title {
-     top: 0%;
-   }
+ 
+  //  #about-title {
+  //    top: 0%;
+  //  }
   #about-text {
 
     display: flex;
     flex-wrap: wrap;
     opacity: 0;
     padding-left: 20vw;
-    margin-top: 8rem;
+    // margin-top: 8rem;
     font-size: 1.2rem;
     line-height: 1.8;
     transition: opacity 3.6s 1.1s;
@@ -1030,28 +1002,28 @@ footer {
 
   }
 
-  .underscore {
-    position: relative;
-    /* margin-top: 37em; */
-    top: 25rem;
-    width: 30%;
-    height: 0;
-    border-bottom: 3px solid black;
+  // .underscore {
+  //   position: relative;
+  //   /* margin-top: 37em; */
+  //   top: 25rem;
+  //   width: 30%;
+  //   height: 0;
+  //   border-bottom: 3px solid black;
 
 
-    &.slideIn {
-      left: 0%;
-    }
+  //   &.slideIn {
+  //     left: 0%;
+  //   }
 
-  }
+  // }
   .about {
     height: 280vh;
   }
 
   #skill-intro {
-    position: relative;
-    top: 6%;
-    left: 10%;
+    // position: relative;
+    // top: 6%;
+    // left: 10%;
     font-size: 1.2em;
     padding-left: 2em;
     &.slideLeft {
@@ -1126,7 +1098,8 @@ footer {
 
 
   #skills-container {
-    position: relative;
+    // position: relative;
+    display: block;
     bottom: 14%; 
 
     flex-direction: row;
