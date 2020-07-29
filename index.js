@@ -316,6 +316,7 @@ window.addEventListener('scroll', function() {
   }
 
   if((window.scrollY + window.innerHeight) >= getPosition(skillIntro).y) {
+    console.log('sliiiding in')
     skillIntro.classList.add('slideLeft')
   }
 
