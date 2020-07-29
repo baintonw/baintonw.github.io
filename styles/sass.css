@@ -2,7 +2,7 @@ html {
   overflow-x: hidden; }
 
 body {
-  font-family: helvetica;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -146,8 +146,6 @@ header {
     position: fixed; }
 
 #hero {
-  position: absolute;
-  top: -20rem;
   text-align: center;
   font-size: 35.5vw;
   z-index: -1;
@@ -158,9 +156,7 @@ header {
   -webkit-text-stroke-color: black; }
 
 #about-title {
-  position: absolute;
-  top: 7%;
-  left: 2%;
+  margin-left: 3rem;
   font-size: 60px;
   z-index: 0; }
 
@@ -179,6 +175,7 @@ header {
   height: 120vh;
   width: 100vw;
   background: #ffffff;
+  height: 100vh;
   background-color: rgba(237, 238, 241, 0.7);
   position: relative;
   background-repeat: no-repeat;
@@ -186,6 +183,9 @@ header {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 1; }
+
+.about {
+  width: 100vw; }
 
 #about-text {
   opacity: 0;
@@ -223,9 +223,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  width: 60vw;
-  min-height: 10vh;
-  border: 2px solid salmon; }
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  min-height: 10vh; }
 
 @keyframes bounce {
   0% {
@@ -251,6 +252,7 @@ header {
   top: -15%;
   height: 50%;
   width: 30%;
+  text-align: center;
   opacity: 0;
   padding-bottom: 1em;
   box-sizing: border-box;
@@ -264,19 +266,13 @@ header {
   .skill#skill1 {
     border-top: 0;
     border-left: 0; }
-    .skill#skill1 .skill-title {
-      padding-left: 5.5rem; }
   .skill#skill2 {
     border-top: 0;
     transition: top .8s .6s, transform .6s,opacity .8s .6s; }
-    .skill#skill2 h2 {
-      padding-left: 3em; }
   .skill#skill3 {
     border-top: 0;
     border-right: 0;
     transition: top .8s .8s, transform .6s, opacity .8s .8s; }
-    .skill#skill3 h2 {
-      padding-left: 2em; }
 
 .skillBtm {
   position: relative;
@@ -285,6 +281,7 @@ header {
   background-image: linear-gradient(#efefef, white);
   height: 50%;
   width: 30%;
+  text-align: center;
   box-sizing: border-box;
   margin: .4em;
   transition: transform .6s, top 1s 1s, opacity .8s 1s;
@@ -302,26 +299,21 @@ header {
     border-bottom: 0;
     border-right: 0;
     transition: top .8s 1.4s, transform .6s, opacity .8s 1.4s; }
-    .skillBtm#skill6 .skill-titleBtm {
-      padding-left: 4.5rem; }
   .skillBtm:hover {
     transform: translateY(20%); }
 
 .skill-title {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  padding-left: 2.5rem; }
+  font-size: 2rem; }
 
 .skill-titleBtm {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  padding-left: 5.5rem; }
+  font-size: 2rem; }
 
 .skill-icon {
   margin: 0 auto;
   width: 60%;
-  height: 60%;
-  padding-left: 3.5em; }
+  height: 60%; }
 
 .projects {
   position: relative;
@@ -684,8 +676,6 @@ footer {
     height: 40%;
     margin-top: 10%; }
   #hero {
-    position: absolute;
-    top: 7%;
     font-size: 61.5vw;
     z-index: -1;
     font-weight: 1000;
@@ -704,7 +694,7 @@ footer {
     #about-text.fadeIn {
       opacity: 1; }
   .about {
-    height: 280vh; }
+    width: 100vw; }
   #skill-intro {
     font-size: 1.2em;
     padding-left: 2em; }

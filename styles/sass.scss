@@ -2,7 +2,8 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: helvetica;
+  // font-family: helvetica;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
   background-color: white;
   margin: 0;
   padding: 0;
@@ -204,8 +205,8 @@ header {
 
 //hero
 #hero {
-  position: absolute;
-  top: -20rem;
+  // position: absolute;
+  // top: -20rem;
   text-align: center;
   font-size: 35.5vw;
   z-index: -1;
@@ -217,9 +218,10 @@ header {
 
 
 #about-title {
-  position: absolute;
-  top: 7%;
-  left: 2%;
+  // position: absolute;
+  // top: 7%;
+  // left: 2%;
+  margin-left: 3rem;
   font-size: 60px;
   z-index: 0;
 }
@@ -237,6 +239,7 @@ header {
 //HOME SECTION
 .home {
   @include flexCenter(#ffffff);
+  height: 100vh;
   background-color: rgba(237, 238, 241, .7);
   position: relative;
   background-repeat: no-repeat;
@@ -248,27 +251,22 @@ header {
 }
 
 //ABOUT SECTION
+
+// Right now you removed the flex from the about section and are adjusting the layout
+//don't forget to run npm run sass
 .about {
-  // @include flexCenter(white);
-  // position: relative;
-  // height: 220vh;
-  // flex-wrap: wrap;
-  // align-content: space-between;
+
+  width: 100vw;
+// 
 }
 
 #about-text {
-  // right: 20%;
-  // width: 50vw;
-  // height: 40vh;
-  // max-height: 20vh;
+
   opacity: 0;
-  // padding-top: 10vh;
   padding-left: 20vw;
   padding-right: 20vw;
-  // margin-top: 13rem;
   font-size: 1.6rem;
   line-height: 2.3;
-  // flex-basis: 100%;
 
   &.fadeIn {
     opacity: 1;
@@ -332,10 +330,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  width: 60vw;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
   min-height: 10vh;
 
-  border: 2px solid salmon;
+  // border: 2px solid salmon;
 }
 
 
@@ -360,6 +360,8 @@ header {
   top: -15%;
   height: 50%;
   width: 30%;
+  text-align: center;
+  
   opacity: 0;
   padding-bottom: 1em;
   box-sizing: border-box;
@@ -379,7 +381,7 @@ header {
     border-top: 0;
     border-left: 0;
       & .skill-title {
-        padding-left: 5.5rem;
+        // padding-left: 5.5rem;
       }
   }
 
@@ -387,7 +389,7 @@ header {
     border-top: 0;
     transition: top .8s .6s, transform .6s,opacity .8s .6s;
       & h2 {
-        padding-left: 3em;
+        // padding-left: 3em;
       }
   }
 
@@ -397,7 +399,7 @@ header {
     transition: top .8s .8s, transform .6s, opacity .8s .8s;
 
       & h2 {
-        padding-left: 2em;
+        // padding-left: 2em;
       }
     }
   }
@@ -409,6 +411,8 @@ header {
   background-image: linear-gradient(#efefef, white);
   height: 50%;
   width: 30%;
+
+  text-align: center;
 
   box-sizing: border-box;
   margin: .4em;
@@ -437,7 +441,7 @@ header {
     transition: top .8s 1.4s, transform .6s, opacity .8s 1.4s;
 
       & .skill-titleBtm {
-        padding-left: 4.5rem;
+        // padding-left: 4.5rem;
       }
   }
 
@@ -449,14 +453,14 @@ header {
 .skill-title {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  padding-left: 2.5rem;
+  // padding-left: 2.5rem;
 
 }
 
 .skill-titleBtm {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  padding-left: 5.5rem;
+  // padding-left: 5.5rem;
 
 }
 
@@ -464,7 +468,7 @@ header {
   margin: 0 auto;
   width: 60%;
   height: 60%;
-  padding-left: 3.5em;
+  // padding-left: 3.5em;
 
 }
 
@@ -966,8 +970,7 @@ footer {
   }
 
    #hero {
-     position: absolute;
-     top: 7%;
+
      font-size: 61.5vw;
      z-index: -1;
      font-weight: 1000;
@@ -1017,7 +1020,8 @@ footer {
 
   // }
   .about {
-    height: 280vh;
+    width: 100vw;
+    // height: 280vh;
   }
 
   #skill-intro {
@@ -1099,7 +1103,9 @@ footer {
 
   #skills-container {
     // position: relative;
+    
     display: block;
+    
     bottom: 14%; 
 
     flex-direction: row;

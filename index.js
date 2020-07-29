@@ -82,7 +82,7 @@ function init() {
   } else {
     renderer.setSize( window.innerWidth, window.innerHeight
       )};
-
+  renderer.domElement.style = `position: absolute;`
   home.appendChild(renderer.domElement)
 
   const geometry = new THREE.DodecahedronGeometry();
@@ -98,7 +98,6 @@ function init() {
   wireCube = new THREE.Mesh(wireGeo, wireMat)
 
   scene.add( wireCube )
-
 
   camera.position.z = 3.4;
 
@@ -132,8 +131,6 @@ animate();
 //WebGLRenderer
 const canvas = renderer.domElement
 
-
-
 //Sticky Header on scroll
 window.onscroll = function() {myFunction()};
   console.log('scrollY: ', window.scrollY)
@@ -150,7 +147,6 @@ function myFunction() {
 
 //Smooth scroll for button transitions
 function smoothScroll(target, duration) {
-
   // var target = document.querySelector(target);
 
   //Top of the target
@@ -236,12 +232,11 @@ function onWindowResize(){
 //mobile version - switch if less than a certain size
 window.addEventListener('DOMContentLoaded', () => {
   console.log('GOING Mobile!')
-  if(window.innerWidth < 900) {
+  canvas.style = `position: absolute`
+  if(window.innerWidth < 600) {
     // window.location.href = "./mobile.html"
     canvas.style.width = `${window.innerWidth / 1.5}px`
     canvas.style.height = `${window.innerHeight / 1.5}px`
-
-
   }
 })
 
