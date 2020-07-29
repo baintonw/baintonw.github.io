@@ -253,8 +253,8 @@ header {
   background-image: linear-gradient(white, #efefef);
   position: relative;
   top: -15%;
-  height: 50%;
-  width: 30%;
+  height: 15rem;
+  width: 15rem;
   text-align: center;
   opacity: 0;
   padding-bottom: 1em;
@@ -282,8 +282,8 @@ header {
   top: 15%;
   border: 1px solid black;
   background-image: linear-gradient(#efefef, white);
-  height: 50%;
-  width: 30%;
+  height: 15rem;
+  width: 15rem;
   text-align: center;
   box-sizing: border-box;
   margin: .4em;
@@ -763,7 +763,7 @@ footer {
   .text-box-tl {
     width: 86%;
     align-self: flex-start;
-    padding-bottom: 32em;
+    padding-bottom: 40em;
     z-index: 1; }
     .text-box-tl h2 {
       color: black; }
@@ -773,9 +773,9 @@ footer {
       font-size: 1.2em; }
   .projects-container {
     position: absolute;
-    top: 40%;
-    width: 70vw;
-    height: 70vw;
+    top: 34%;
+    width: 60vw;
+    height: 60vw;
     padding: 5px;
     display: flex;
     direction: row;

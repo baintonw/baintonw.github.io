@@ -366,8 +366,10 @@ header {
   background-image: linear-gradient(white, #efefef);
   position: relative;
   top: -15%;
-  height: 50%;
-  width: 30%;
+  // height: 50%;
+  // width: 30%;
+  height: 15rem;
+  width: 15rem;
   text-align: center;
   
   opacity: 0;
@@ -417,8 +419,10 @@ header {
   top: 15%;
   border: 1px solid black;
   background-image: linear-gradient(#efefef, white);
-  height: 50%;
-  width: 30%;
+  // height: 50%;
+  // width: 30%;
+  height: 15rem;
+  width: 15rem;
 
   text-align: center;
 
@@ -888,7 +892,7 @@ footer {
   align-items: center;
   bottom: 0;
   // border-top: 2px solid black;
-  box-shadow: 0 6px 6px -6px #777, 0 -6px 6px -6px #777;
+      box-shadow: 0 6px 6px -6px #777, 0 -6px 6px -6px #777;
   background:#efefef;
   width: 100vw;
   // left: -1vw;
@@ -967,7 +971,6 @@ footer {
      width: 103vw;
    }
    #menu {
-
      &.dropped {
        width: 95vw;
        height: 28vh;
@@ -1114,9 +1117,7 @@ footer {
     // position: relative;
     
     display: block;
-    
     bottom: 14%; 
-
     flex-direction: row;
     left: 15%;
     // min-height: 0;
@@ -1150,7 +1151,8 @@ footer {
   .text-box-tl {
     width: 86%;
     align-self: flex-start;
-    padding-bottom: 32em;
+    padding-bottom: 40em;
+
 
       & h2 {
         color: rgba(0,0,0 ,1);
@@ -1167,9 +1169,9 @@ footer {
 
   .projects-container {
     position: absolute;
-    top: 40%;
-    width: 70vw;
-    height: 70vw;
+    top: 34%;
+    width: 60vw;
+    height: 60vw;
 
     padding: 5px;
     display: flex;
@@ -1240,9 +1242,6 @@ footer {
   .social-link img {
     // width: 250%;
   }
-
-
-
   canvas {
     padding-top: 0em;
   }
