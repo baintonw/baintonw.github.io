@@ -1,5 +1,5 @@
 //variables
-$primary-color: #4287f5;
+$primary-color: rgba(0, 153, 255, 0.2);
 $secondary-color: #f8f8ff;
 
 
@@ -9,7 +9,8 @@ html {
 body {
   // font-family: helvetica;
   font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
-  background-color: white;
+  background-color: rgb(104, 100, 100);
+  background-color: $secondary-color;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -148,7 +149,6 @@ body {
   transition: 1s;
   padding: 2px;
   z-index: 20;
-
   &:hover {
     cursor: pointer;
 
@@ -210,8 +210,6 @@ header {
 
 //hero
 #hero {
-  // position: absolute;
-  // top: -20rem;
   text-align: center;
   font-size: 35.5vw;
   z-index: -1;
@@ -223,9 +221,7 @@ header {
 
 
 #about-title {
-  // position: absolute;
-  // top: 7%;
-  // left: 2%;
+
   margin-left: 3rem;
   font-size: 60px;
   z-index: 0;
@@ -246,6 +242,7 @@ header {
   @include flexCenter(#ffffff);
   height: 100vh;
   background-color: rgba(237, 238, 241, .7);
+  background-color: $primary-color;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,11 +253,7 @@ header {
 }
 
 //ABOUT SECTION
-
-// Right now you removed the flex from the about section and are adjusting the layout
-//don't forget to run npm run sass
 .about {
-
   width: 100vw;
 // 
 }
@@ -282,8 +275,6 @@ header {
 }
 
 #about1 {
-  // position: relative;
-  // left : -20%;
   transform: translateX(-20%);
   opacity: 0;
   transition: opacity 2.6s ease-in-out 1s, transform 2s ease-in-out 1s;
@@ -304,21 +295,6 @@ header {
     opacity: 1;
   }
 }
-
-// .underscore {
-
-//   position: relative;
-//   // left: -20%;
-//   width: 30%;
-//   height: 0;
-//   border-bottom: 3px solid black;
-//   transition: 1.2s;
-//   transition-delay: .2s;
-//   bottom: 33%;
-//   &.slideIn {
-//     left: 28%;
-//   }
-// }
 
 #skill-intro {
   transform: translateX(-20%);
@@ -366,8 +342,6 @@ header {
   background-image: linear-gradient(white, #efefef);
   position: relative;
   top: -15%;
-  // height: 50%;
-  // width: 30%;
   height: 15rem;
   width: 15rem;
   text-align: center;
@@ -419,8 +393,6 @@ header {
   top: 15%;
   border: 1px solid black;
   background-image: linear-gradient(#efefef, white);
-  // height: 50%;
-  // width: 30%;
   height: 15rem;
   width: 15rem;
 

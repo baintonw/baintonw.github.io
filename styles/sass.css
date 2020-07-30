@@ -3,7 +3,8 @@ html {
 
 body {
   font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
-  background-color: white;
+  background-color: #686464;
+  background-color: #f8f8ff;
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
@@ -177,6 +178,7 @@ header {
   background: #ffffff;
   height: 100vh;
   background-color: rgba(237, 238, 241, 0.7);
+  background-color: rgba(0, 153, 255, 0.2);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
