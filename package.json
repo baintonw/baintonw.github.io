@@ -4,7 +4,7 @@
   "description": "**This is a test update**",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "three": "^0.111.0"
   },
   "devDependencies": {},
